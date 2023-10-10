@@ -1,9 +1,5 @@
-import Image from "next/image"
+import SectionHero from "@/components/SectionHero"
 
 export default function Home() {
-  return (
-    <main>
-      <h1>Landing Page Example</h1>
-    </main>
-  )
+  return <SectionHero />
 }
