@@ -7,9 +7,9 @@ interface Props {
 
 const ItemMenu: React.FC<Props> = ({ name }) => {
   return (
-    <button className="flex items-center gap-3">
+    <button className="flex items-center gap-1">
       <span className="text-white font-bold">{name}</span>
-      <Image src={Arrow} alt="Arrow drowpdown" width={20} />
+      <Image src={Arrow} alt="Arrow drowpdown" width={15} />
     </button>
   )
 }
