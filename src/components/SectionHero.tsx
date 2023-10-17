@@ -10,10 +10,10 @@ const SectionHero = () => {
     <section className=" w-full h-[704px] bg-img_bg_hero bg-no-repeat bg-center bg-cover">
       <Container>
         <div className="flex-1 max-w-[500px]">
-          <h1 className="text-white text-7xl font-bold mt-5 mb-4">
+          <h1 className="text-white text-4xl md:text-7xl font-bold mt-5 mb-4">
             Tenha seu banco na palma da mão.{" "}
           </h1>
-          <p className="text-white text-xl max-w-[408px] mb-8">
+          <p className="text-white md:text-xl max-w-[408px] mb-8">
             Todas as operações que você precisa em um só lugar. Simples,
             completo e feito para você.
           </p>
@@ -32,7 +32,7 @@ const SectionHero = () => {
             </span>
           </button>
         </div>
-        <Image src={Woman} alt="Woman" height={703} width={703} />
+        <Image src={Woman} alt="Woman" height={703} width={703} className="hidden md:block" />
       </Container>
     </section>
   )
