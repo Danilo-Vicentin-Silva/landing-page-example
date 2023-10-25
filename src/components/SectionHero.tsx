@@ -1,3 +1,5 @@
+'use client'
+
 import Container from "@/components/Container"
 import ImgAppleStore from "@/assets/btn-apple-store.svg"
 import ImgGooglePlay from "@/assets/btn-google-play.svg"
@@ -6,6 +8,10 @@ import Image from "next/image"
 import Woman from "@/assets/woman.png"
 
 const SectionHero = () => {
+  const scroll = () => {
+    window.scrollTo({ top: 1000, behavior: "smooth" })
+  }
+
   return (
     <section className=" w-full h-[704px] bg-img_bg_hero bg-no-repeat bg-center bg-cover">
       <Container>
@@ -27,12 +33,21 @@ const SectionHero = () => {
           </div>
           <button className="flex items-center gap-3">
             <Image src={Arrow} alt="arrow explorer" width={15} />
-            <span className="text-white text-sm font-bold">
+            <span
+              onClick={() => scroll()}
+              className="text-white text-sm font-bold"
+            >
               Continue explorando
             </span>
           </button>
         </div>
-        <Image src={Woman} alt="Woman" height={703} width={703} className="hidden md:block" />
+        <Image
+          src={Woman}
+          alt="Woman"
+          height={703}
+          width={703}
+          className="hidden md:block"
+        />
       </Container>
     </section>
   )
