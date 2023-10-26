@@ -6,7 +6,7 @@ Projeto de um exemplo prático de uma landing page criada usando a tecnologia Ne
 
 Você pode acessar [aqui](https://landing-page-example-wine.vercel.app/)
 
-[Project Image]("https://github.com/Danilo-Vicentin-Silva/landing-page-example/blob/master/public/images/landing-page-example-cover.webp")
+<img src="public/images/landing-page-example-cover.webp" alt="Projeto"/>
 
 ### Tecnologias
 
